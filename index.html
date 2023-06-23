@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device=device-width, initial-scale=1">
+    <title>Coffee Shop Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header class="p-3" id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img id="header-logo" src="./img/header-logo.png" alt="coffe shop header logo">
+                </div>
+                <div class="d-none d-md-block col-8 text-right">
+                    <a class="text-decoration-none text-uppercase" href="#">about</a>
+                    <a class="text-decoration-none text-uppercase" href="#">products</a>
+                    <a class="text-decoration-none text-uppercase" href="#">contact</a>
+                    <a class="text-decoration-none text-uppercase" href="#">how to find us?</a>
+                </div>
+
+                <div class="d-md-none col-8 text-right">
+                    <a id="menu-btn" href="#"><img id="menu-icon" src="./img/menu.png" alt="menu"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section id="hero-section" class="text-light">
+        <div class="overlay"></div>
+        <div class="containter-fluid">
+            <div class="row vh-100 align-items-center pb-5 margin-row">
+                <div class="col-12 text-center">
+                    <img id="hero-logo" src="./img/logo.png" alt="coffee shop logo">
+                    <h1 id="heroh1" class="display-2 font-weight-bold">THE HOME OF COFFEE</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                        scelerisque
+                        commodo
+                        viverra. Pellentesque viverra nunc eget porta blandit.</p>
+                </div>
+            </div>
+        </div>
+
+        <a id="arrow-down" href="#intro-section"> <img src="./img/arrow-down.png" alt="see more"></a>
+
+    </section>
+
+    <section id="intro-section" class="py-5">
+        <div class="conatiner py-5">
+            <div id="introDiv" class="row justify-content-center py-5 margin-row">
+                <div class="col-10 col-xl-6 text-center py-5">
+                    <h1 class="font-weight-bold">THE BEST COFFEE SHOP</h1>
+                    <p>Donec quis lectus lacus. Fusce gravida dignissim sapien, non tempus libero ornare id. Duis nec
+                        vestibulum sem. Duis venenatis euismod arcu non convallis. Pellentesque lorem nisl, elementum
+                        vitae purus vel, tincidunt vestibulum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi eget euismod ligula.</p>
+                </div>
+            </div>
+            <div class="row margin-row">
+                <div class="col-sm-4 text-center">
+                    <img src="./img/icon-1.png" alt="icon1" class="img-fluid py-3">
+                    <p class="h4 font-weight-bold">BEST BEANS</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img src="./img/icon-2.png" alt="icon2" class="img-fluid py-3">
+                    <p class="h4 font-weight-bold">QUALITY MILK</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img src="./img/icon-3.png" alt="icon3" class="img-fluid py-3">
+                    <p class="h4 font-weight-bold">PERFECT BLEND</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div id="about-containter" class="container-fluid">
+            <div class="row margin-row">
+                <div class=" col-12 col-md-5 offset-md-1 align-self-center p-5">
+                    <h2 class="font-weight-bold">GREAT PLACE</h2>
+                    <p class="text-muted lead">Integer eu consectetur sem. Donec dapibus vehicula enim. Pellentesque
+                        accumsan tellus ipsum, nec
+                        rutrum erat porttitor porttitor. Cras lorem sapien, pretium eu rhoncus iaculis, volutpat at
+                        enim. Quisque a felis et nulla gravida accumsan. Aliquam dictum mattis vehicula. Vestibulum at
+                        posuere leo. Cras lectus augue, mollis vitae lorem in, pellentesque consequat leo. Praesent in
+                        odio consequat, fermentum ipsum ut, dignissim magna.</p>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+                <div id="about-bg1" class="d-none d-md-block col-md-5 offset-1"></div>
+            </div>
+
+            <div class="row margin-row align-items-center" id="about-bg2">
+                <div class="d-none d-md-block col-md-6"> </div>
+                <div class="col-12 col-md-6 text-light p-5">
+                    <h2>FRESH BEANS</h2>
+                    <p class="text-muted lead">Integer eu consectetur sem. Donec dapibus vehicula enim. Pellentesque
+                        accumsan tellus ipsum, nec
+                        rutrum erat porttitor porttitor. Cras lorem sapien, pretium eu rhoncus iaculis, volutpat at
+                        enim. Quisque a felis et nulla gravida accumsan. Aliquam dictum mattis vehicula. Vestibulum at
+                        posuere leo. Cras lectus augue, mollis vitae lorem in, pellentesque consequat leo. Praesent in
+                        odio consequat, fermentum ipsum ut, dignissim magna.</p>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <h1 class="font-weight-bold">SELECTION FROM OUR MENU</h1>
+                    <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="./img/coffee-item-1.png" alt="coffe shop logo">
+                    <h2 class="my-3">BLACK CAKE</h2>
+                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.
+                    </p>
+                    <p class="h3">4€</p>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="./img/coffee-item-2.png" alt="coffe shop logo">
+                    <h2 class="my-3">BLACK COFFEE</h2>
+                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.
+                    </p>
+                    <p class="h3">6€</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="./img/coffee-item-3.png" alt="coffe shop logo">
+                    <h2 class="my-3">ESPRESSO</h2>
+                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.
+                    </p>
+                    <p class="h3">6€</p>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="./img/coffee-item-4.png" alt="coffe shop logo">
+                    <h2 class="my-3">LATTE</h2>
+                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.
+                    </p>
+                    <p class="h3">6€</p>
+
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="./img/coffee-item-5.png" alt="  coffe shop logo">
+                    <h2 class="my-3">MACARONS</h2>
+                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.
+                    </p>
+                    <p class="h3">3€</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img class="img-fluid" src="./img/coffee-item-6.png" alt="coffe shop logo">
+                    <h2 class="my-3">MACCHIATO</h2>
+                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.
+                    </p>
+                    <p class="h3">6€</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contant-info-section">
+        <div class="container-fluid">
+            <div id="contant-info-bg1" class="row text-light ">
+                <div class="col-md-5 offset-md-1 p-5">
+                    <h2>YOU ARE WELCOME!</h2>
+                    <p>COME ON IN!</p>
+                    <br>
+                    <h4>WEEKDAYS</h4>
+                    <p>08PM - 12AM</p>
+                    <br>
+                    <h4>WEEKENDS</h4>
+                    <p>12PM - 02AM</p>
+                </div>
+                <div class="col-md-6 p-5" id="contant-info-bg2">
+                    <h2>CONTACT</h2>
+                    <br>
+                    <h4>PHONE</h4>
+                    <p>+(000) 111 222 333</p>
+                    <br>
+                    <h4>MAIL</h4>
+                    <p>address@domain.com</p>
+                    <br>
+                    <h4>ADDRESS</h4>
+                    <p>543 TN, doula street NY, New York</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="map-section">
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <div class="container-fluid text-light py-3">
+            <div class="row">
+                <div class="col-md-5 offset-1 align-self-center">
+                    Coffee Shop | © 2020 All rights reserved
+                </div>
+                <div class="col-md-5 text-right" id="social-icons">
+                    <a href="#"><img src="./img/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="#" class="mx-3"><img src="./img/instagram-icon.png" alt="instagram icon"></a>
+                    <a href="#" class="mr-3"><img src="./img/twitter-icon.png" alt="twitter icon"></a>
+                    <a href="#"><img src="./img/phone-icon.png" alt="phone icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/leaflet.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            var myMap = L.map('map', {
+                center: [40.741770, -73.983090],
+                zoom: 17
+            });
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(myMap);
+
+
+            var myIcon = L.icon({
+                iconUrl: 'img/map-icon.png'
+            });
+
+            var marker = L.marker([40.741770, -73.983090], {
+                icon: myIcon
+            }).addTo(myMap);
+
+
+            marker.bindPopup("We are here!");
+        });
+    </script>
+</body>
+
+</html>
